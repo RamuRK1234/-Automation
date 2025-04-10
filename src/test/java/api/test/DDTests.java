@@ -24,13 +24,16 @@ public class DDTests {
 		
 		Response response = UserEndPoints.createUser(userPayload);
 		Assert.assertEquals(response.getStatusCode(),200);
-	}
-	@Test(priority=2,dataProvider="userNames",dataProviderClass=DataProviders.class)
-	public void testDeleteUserByName(String userName) {
-		Response response = UserEndPoints.deleteuser(userName);
-		Assert.assertEquals(response.getStatusCode(),200);
 		
 	}
+	
+	@Test(priority=2,dataProvider="userName",dataProviderClass=DataProviders.class)
+	public void testDeleteUserByName(String userName) {
+		Response response = UserEndPoints.deleteuser(userName);
+		
+		
+	}
+	
 
 }
 

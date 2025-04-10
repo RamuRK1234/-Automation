@@ -42,6 +42,7 @@ public class UserTests {
 		response.then().log().all();
 		Assert.assertEquals(response.getStatusCode(),200);
 	}
+	
 	@Test(priority=3)
 	public void testupdateUserByName() {
 		
@@ -60,5 +61,6 @@ public class UserTests {
 		Response response = UserEndPoints.deleteuser(this.userpayload.getUsername());
 		Assert.assertEquals(response.getStatusCode(),200);
 	}
+
 
 }

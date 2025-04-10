@@ -25,7 +25,7 @@ public class DataProviders {
 		}
 		return apidata;
 	}
-	@DataProvider(name="userNames")  
+	@DataProvider(name="userName")  
 	public String [] getUserNames() throws IOException{
 		String path=System.getProperty("user.dir")+"/testData/Userdata.xlsx";
 		XLutility xl=new XLutility(path);

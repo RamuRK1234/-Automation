@@ -3,15 +3,10 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="api.test.DDTests">
-        <methods>
-          <include name="testDeleteUserByName" invocation-numbers="0 1"/>
-        </methods>
-      </class> <!-- api.test.DDTests -->
       <class name="api.test.UserTests">
         <methods>
+          <include name="testgetuser"/>
           <include name="setUpdata"/>
-          <include name="deleteuserByName"/>
         </methods>
       </class> <!-- api.test.UserTests -->
     </classes>
