@@ -21,9 +21,9 @@ public class ExtendsreportManager implements ITestListener {
 	
 	String repName;
 	 public void onStart(ITestContext testContext) {
-		 String timeStamp=new SimpleDateFormat("yyyy:MM:dd:HH:mm:ss").format(new Date());
-		 repName="Test-report-"+timeStamp+".html";
-		  sparkReporter=new ExtentSparkReporter(".\\reports\\"+repName);
+		 String timeStamp=new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").format(new Date());
+		 String reportPath = System.getProperty("user.dir") + "/reports/Test-report-" + timeStamp + ".html";
+		    sparkReporter = new ExtentSparkReporter(reportPath);
 		 sparkReporter.config().setDocumentTitle("RestAssureAutomation");
 		 sparkReporter.config().setReportName("pet Store Users API");
 		 sparkReporter.config().setTheme(Theme.DARK);

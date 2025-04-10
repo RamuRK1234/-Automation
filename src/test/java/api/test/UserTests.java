@@ -1,13 +1,5 @@
 package api.test;
 
-import static org.testng.Assert.assertEquals;
-import io.restassured.RestAssured.*;
-import io.restassured.matcher.RestAssuredMatchers.*;
-import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
-
-import org.hamcrest.Matchers.*;
-
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -17,6 +9,7 @@ import com.github.javafaker.Faker;
 
 import api.endpoints.UserEndPoints;
 import api.payload.User;
+import io.restassured.response.Response;
 
 public class UserTests {
 	Faker faker;
@@ -37,7 +30,7 @@ public class UserTests {
 	}
 	@Test(priority=1)
 	public void testpostuser() {
-	Response response = UserEndPoints.CreateUser(userpayload);
+		Response response = UserEndPoints.createUser(userpayload);
 		response.then().log().all();
 		
 		Assert.assertEquals(response.getStatusCode(),200);

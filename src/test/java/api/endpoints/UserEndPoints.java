@@ -1,24 +1,18 @@
 package api.endpoints;
-import io.restassured.RestAssured.*;
-import io.restassured.http.ContentType;
-import io.restassured.matcher.RestAssuredMatchers.*;
-import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
-
-import org.hamcrest.Matchers.*;
 import static io.restassured.RestAssured.given;
 
-
+import io.restassured.response.Response;
+import io.restassured.http.ContentType;
 
 import api.payload.User;
 
 public class UserEndPoints {
 	
-	public static Response CreateUser(User payload) {
+	public static Response createUser(User payload) {
 		 
-		Response response=given()
-		.contentType(ContentType.JSON)
-		.accept(ContentType.JSON)
+		Response response= given()
+		    .contentType(ContentType.JSON)
+		     .accept(ContentType.JSON)
 		.body(payload)
 		.when()
 		.post(Routes.post_url);
@@ -56,5 +50,7 @@ public class UserEndPoints {
 		return response;
 		
 	}
+	
+	
 
 }

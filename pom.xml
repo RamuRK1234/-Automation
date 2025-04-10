@@ -3,12 +3,44 @@
   <groupId>samplePractice</groupId>
   <artifactId>samplePractice</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <build>
+  <pluginManagement>
+  <plugins>
+  <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.14.0</version>
+          <configuration>
+            <!-- put your configurations here -->
+          </configuration>
+        </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M5</version> <!-- Ensure you have the latest version -->
+            <configuration>
+                <reportFormat>html</reportFormat>
+                <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
+                <useFile>false</useFile> <!-- Optional: if you want to use another format -->
+                <properties>
+                    <property>
+                        <name>timestamp</name>
+                        <!-- Replace ':' with '_' to avoid invalid characters on Windows -->
+                        <value>yyyy-MM-dd_HH-mm-ss</value>
+                    </property>
+                </properties>
+            </configuration>
+        </plugin>
+  </plugins>
+  </pluginManagement>
+  </build>
   <dependencies>
   <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 <dependency>
     <groupId>io.rest-assured</groupId>
     <artifactId>json-path</artifactId>
-    <version>5.1.1</version>
+    <version>5.3.0</version>
     <scope>test</scope>
 </dependency>
 <!-- https://mvnrepository.com/artifact/org.json/json -->
@@ -21,14 +53,14 @@
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
-    <version>7.10.2</version>
+    <version>7.7.0</version>
     <scope>test</scope>
 </dependency>
 <!-- https://mvnrepository.com/artifact/com.github.scribejava/scribejava-apis -->
 <dependency>
     <groupId>com.github.scribejava</groupId>
     <artifactId>scribejava-apis</artifactId>
-    <version>8.3.1</version>
+    <version>8.3.0</version>
     <scope>runtime</scope>
 </dependency>
 <!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
@@ -54,30 +86,36 @@
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
     <version>5.0.9</version>
-   
-    
-</dependency>
+   </dependency>
 <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 <dependency>
     <groupId>org.apache.poi</groupId>
     <artifactId>poi</artifactId>
     <version>5.2.2</version>
 </dependency>
-<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+<dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>2.13.3</version> <!-- Use the latest version -->
+        <scope>test</scope>
+    </dependency>
+<dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>xml-path</artifactId>
+        <version>5.3.0</version> <!-- Same as the Rest Assured version -->
+        <scope>test</scope>
+    </dependency>
+<dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>rest-assured</artifactId>
+        <version>5.3.0</version> <!-- Use the latest version -->
+        <scope>test</scope>
+    </dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-oo_ -->
 <dependency>
     <groupId>org.apache.poi</groupId>
     <artifactId>poi-ooxml</artifactId>
     <version>5.2.2</version>
 </dependency>
-  	<dependency>
-  		<groupId>2ndproject</groupId>
-  		<artifactId>2ndproject</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>APIAutomation1</groupId>
-  		<artifactId>APIAutomation1</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
   </dependencies>
 </project>

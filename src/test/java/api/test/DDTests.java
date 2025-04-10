@@ -3,10 +3,11 @@ package api.test;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import io.restassured.response.Response;
+
 import api.endpoints.UserEndPoints;
 import api.payload.User;
 import api.utilities.DataProviders;
-import io.restassured.response.Response;
 
 public class DDTests {
 	@Test(priority=1,dataProvider="Data",dataProviderClass=DataProviders.class)
@@ -21,7 +22,7 @@ public class DDTests {
 		userPayload.setPassword(pwd);
 		userPayload.setPhone(ph);
 		
-		Response response = UserEndPoints.CreateUser(userPayload);
+		Response response = UserEndPoints.createUser(userPayload);
 		Assert.assertEquals(response.getStatusCode(),200);
 	}
 	@Test(priority=2,dataProvider="userNames",dataProviderClass=DataProviders.class)
@@ -32,3 +33,4 @@ public class DDTests {
 	}
 
 }
+

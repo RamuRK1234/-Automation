@@ -7,7 +7,7 @@ import org.testng.annotations.DataProvider;
 public class DataProviders {
 	@DataProvider(name="Data")  
 	public String [][] getAllData() throws IOException{
-		String path=System.getProperty("user.dir")+"//Userdata.xlsx";
+		String path=System.getProperty("user.dir")+"/testData/Userdata.xlsx";
 		XLutility xl=new XLutility(path);
 		
 		int rownum=xl.getRowCount("Sheet1");
@@ -25,9 +25,9 @@ public class DataProviders {
 		}
 		return apidata;
 	}
-	@DataProvider(name="UserNames")  
+	@DataProvider(name="userNames")  
 	public String [] getUserNames() throws IOException{
-		String path=System.getProperty("user.dir")+"//testData///Userdata.xlsx";
+		String path=System.getProperty("user.dir")+"/testData/Userdata.xlsx";
 		XLutility xl=new XLutility(path);
 		int rownum=xl.getRowCount("Sheet1");
 		String apidata[]=new String[rownum];

@@ -24,23 +24,16 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/RamakrishnaPinjala/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar" sourcepath="C:/Users/RamakrishnaPinjala/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30-sources.jar">
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
 		<attributes>
+			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.freemarker"/>
-			<attribute name="maven.artifactId" value="freemarker"/>
-			<attribute name="maven.version" value="2.3.30"/>
-			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/RamakrishnaPinjala/.m2/repository/io/rest-assured/rest-assured/5.5.1/rest-assured-5.5.1.jar" sourcepath="C:/Users/RamakrishnaPinjala/.m2/repository/io/rest-assured/rest-assured/5.5.1/rest-assured-5.5.1-sources.jar">
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="test" value="true"/>
-			<attribute name="maven.groupId" value="io.rest-assured"/>
-			<attribute name="maven.artifactId" value="rest-assured"/>
-			<attribute name="maven.version" value="5.5.1"/>
-			<attribute name="maven.scope" value="test"/>
+			<attribute name="optional" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
