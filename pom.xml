@@ -63,6 +63,12 @@
     <version>7.7.0</version>
     <scope>test</scope>
 </dependency>
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.30</version> <!-- or the latest -->
+    <scope>provided</scope>
+</dependency>
 <!-- https://mvnrepository.com/artifact/com.github.scribejava/scribejava-apis -->
 <dependency>
     <groupId>com.github.scribejava</groupId>

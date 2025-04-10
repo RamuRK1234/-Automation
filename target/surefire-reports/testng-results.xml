@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-10T19:20:53 IST" name="Surefire suite" finished-at="2025-04-10T19:21:10 IST" duration-ms="16409">
+  <suite started-at="2025-04-10T19:58:18 IST" name="Surefire suite" finished-at="2025-04-10T19:58:35 IST" duration-ms="17032">
     <groups>
     </groups>
-    <test started-at="2025-04-10T19:20:53 IST" name="Surefire test" finished-at="2025-04-10T19:21:10 IST" duration-ms="16409">
+    <test started-at="2025-04-10T19:58:18 IST" name="Surefire test" finished-at="2025-04-10T19:58:35 IST" duration-ms="17032">
       <class name="api.test.UserTests">
-        <test-method is-config="true" signature="setUpdata()[pri:0, instance:api.test.UserTests@2805c96b]" started-at="2025-04-10T19:21:04 IST" name="setUpdata" finished-at="2025-04-10T19:21:04 IST" duration-ms="264" status="PASS">
+        <test-method is-config="true" signature="setUpdata()[pri:0, instance:api.test.UserTests@2805c96b]" started-at="2025-04-10T19:58:28 IST" name="setUpdata" finished-at="2025-04-10T19:58:28 IST" duration-ms="220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpdata -->
-        <test-method signature="testpostuser()[pri:1, instance:api.test.UserTests@2805c96b]" started-at="2025-04-10T19:21:04 IST" name="testpostuser" finished-at="2025-04-10T19:21:05 IST" duration-ms="1124" status="PASS">
+        <test-method signature="testpostuser()[pri:1, instance:api.test.UserTests@2805c96b]" started-at="2025-04-10T19:58:28 IST" name="testpostuser" finished-at="2025-04-10T19:58:29 IST" duration-ms="1116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testpostuser -->
-        <test-method signature="testgetuser()[pri:2, instance:api.test.UserTests@2805c96b]" started-at="2025-04-10T19:21:05 IST" name="testgetuser" finished-at="2025-04-10T19:21:06 IST" duration-ms="1237" status="FAIL">
+        <test-method signature="testgetuser()[pri:2, instance:api.test.UserTests@2805c96b]" started-at="2025-04-10T19:58:29 IST" name="testgetuser" finished-at="2025-04-10T19:58:30 IST" duration-ms="1014" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [200] but found [404]]]>
@@ -68,17 +68,17 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testgetuser -->
-        <test-method signature="testupdateUserByName()[pri:3, instance:api.test.UserTests@2805c96b]" started-at="2025-04-10T19:21:06 IST" name="testupdateUserByName" finished-at="2025-04-10T19:21:09 IST" duration-ms="2189" status="PASS">
+        <test-method signature="testupdateUserByName()[pri:3, instance:api.test.UserTests@2805c96b]" started-at="2025-04-10T19:58:30 IST" name="testupdateUserByName" finished-at="2025-04-10T19:58:34 IST" duration-ms="3335" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testupdateUserByName -->
-        <test-method signature="deleteuserByName()[pri:4, instance:api.test.UserTests@2805c96b]" started-at="2025-04-10T19:21:09 IST" name="deleteuserByName" finished-at="2025-04-10T19:21:10 IST" duration-ms="1093" status="PASS">
+        <test-method signature="deleteuserByName()[pri:4, instance:api.test.UserTests@2805c96b]" started-at="2025-04-10T19:58:34 IST" name="deleteuserByName" finished-at="2025-04-10T19:58:35 IST" duration-ms="1187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteuserByName -->
       </class> <!-- api.test.UserTests -->
       <class name="api.test.DDTests">
-        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DDTests@327b636c]" started-at="2025-04-10T19:20:54 IST" name="testPostUser" data-provider="Data" finished-at="2025-04-10T19:20:58 IST" duration-ms="4038" status="PASS">
+        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DDTests@327b636c]" started-at="2025-04-10T19:58:19 IST" name="testPostUser" data-provider="Data" finished-at="2025-04-10T19:58:21 IST" duration-ms="2705" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -119,7 +119,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPostUser -->
-        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DDTests@327b636c]" started-at="2025-04-10T19:20:58 IST" name="testPostUser" data-provider="Data" finished-at="2025-04-10T19:20:59 IST" duration-ms="1045" status="PASS">
+        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DDTests@327b636c]" started-at="2025-04-10T19:58:21 IST" name="testPostUser" data-provider="Data" finished-at="2025-04-10T19:58:23 IST" duration-ms="1141" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -160,7 +160,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPostUser -->
-        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DDTests@327b636c]" started-at="2025-04-10T19:20:59 IST" name="testPostUser" data-provider="Data" finished-at="2025-04-10T19:21:01 IST" duration-ms="1061" status="PASS">
+        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DDTests@327b636c]" started-at="2025-04-10T19:58:23 IST" name="testPostUser" data-provider="Data" finished-at="2025-04-10T19:58:24 IST" duration-ms="1740" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -201,7 +201,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPostUser -->
-        <test-method signature="testDeleteUserByName(java.lang.String)[pri:2, instance:api.test.DDTests@327b636c]" started-at="2025-04-10T19:21:01 IST" name="testDeleteUserByName" data-provider="userName" finished-at="2025-04-10T19:21:02 IST" duration-ms="1114" status="PASS">
+        <test-method signature="testDeleteUserByName(java.lang.String)[pri:2, instance:api.test.DDTests@327b636c]" started-at="2025-04-10T19:58:24 IST" name="testDeleteUserByName" data-provider="userName" finished-at="2025-04-10T19:58:26 IST" duration-ms="1350" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -212,7 +212,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteUserByName -->
-        <test-method signature="testDeleteUserByName(java.lang.String)[pri:2, instance:api.test.DDTests@327b636c]" started-at="2025-04-10T19:21:02 IST" name="testDeleteUserByName" data-provider="userName" finished-at="2025-04-10T19:21:03 IST" duration-ms="1066" status="PASS">
+        <test-method signature="testDeleteUserByName(java.lang.String)[pri:2, instance:api.test.DDTests@327b636c]" started-at="2025-04-10T19:58:26 IST" name="testDeleteUserByName" data-provider="userName" finished-at="2025-04-10T19:58:27 IST" duration-ms="1027" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -223,7 +223,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteUserByName -->
-        <test-method signature="testDeleteUserByName(java.lang.String)[pri:2, instance:api.test.DDTests@327b636c]" started-at="2025-04-10T19:21:03 IST" name="testDeleteUserByName" data-provider="userName" finished-at="2025-04-10T19:21:04 IST" duration-ms="1000" status="PASS">
+        <test-method signature="testDeleteUserByName(java.lang.String)[pri:2, instance:api.test.DDTests@327b636c]" started-at="2025-04-10T19:58:27 IST" name="testDeleteUserByName" data-provider="userName" finished-at="2025-04-10T19:58:28 IST" duration-ms="995" status="PASS">
           <params>
             <param index="0">
               <value>
